@@ -1,0 +1,169 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/zoezoebian0527/images/icons/favicon-16x16.png?v=2.6.2" type="image/png" sizes="16x16"><link rel="icon" href="/zoezoebian0527/images/icons/favicon-32x32.png?v=2.6.2" type="image/png" sizes="32x32"><meta name="description" content="【GAMES101】02 线代复习                           一、向量Vectors                           1.概念：                             2.向量的加法                            3.笛卡尔坐标系中的向量">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="https://zoebian0527.github.io/zoezoebian0527/2022/03/02/%E3%80%90GAMES101%E3%80%9102%20%E7%BA%BF%E4%BB%A3%E5%A4%8D%E4%B9%A0/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="【GAMES101】02 线代复习                           一、向量Vectors                           1.概念：                             2.向量的加法                            3.笛卡尔坐标系中的向量">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://zoebian0527.github.io/zoezoebian0527/images/lbKENK0y73axWmDlVv79k_Klj6Um2IYOMvvbci-G6IY.png">
+<meta property="og:image" content="https://zoebian0527.github.io/zoezoebian0527/images/5-SE2JkiYNbb0VtLF7N1Rwcy0yYSeGcPQQzbL2NOn-8.png">
+<meta property="og:image" content="https://zoebian0527.github.io/zoezoebian0527/images/Wne6ru8DE9NU-1scoWW6sOcunOWXDMVMQvATLqLP32Y.png">
+<meta property="og:image" content="https://zoebian0527.github.io/zoezoebian0527/images/2xr5kBH9xovt84bdnfFkNsKM8m9CKDBrXlO3GABRxsc.png">
+<meta property="og:image" content="https://zoebian0527.github.io/zoezoebian0527/images/f2rcGRd9vdduHt2KnByoShc_iMeqKFL3nCLM58H0ECE.png">
+<meta property="og:image" content="https://zoebian0527.github.io/zoezoebian0527/images/btuy8UXK6WtUwjd9f7iCxvbS7ql4vZdqFp7JF5yfIOY.png">
+<meta property="og:image" content="https://zoebian0527.github.io/zoezoebian0527/images/e0YazVJItMswsGdAadOCXfpuk3H8pL7N0Dv0ELo_YLI.png">
+<meta property="og:image" content="https://zoebian0527.github.io/zoezoebian0527/images/DqZ0XfK80SVhzsoYbspo7PhI9oAO-NtHOoP1RqKF0YQ.png">
+<meta property="og:image" content="https://zoebian0527.github.io/zoezoebian0527/images/PaNPiXlVtPAvNc5inHQhQd1eayOqYMHbtaBRztZ_Vq8.png">
+<meta property="og:image" content="https://zoebian0527.github.io/zoezoebian0527/images/37lbQ-HDN6Fv4XiDDIbBCKe94m0BbcFUoGWTVVO6VTs.png">
+<meta property="og:image" content="https://zoebian0527.github.io/zoezoebian0527/images/7baN9EaW1wzKFaLgMGCYndCcpfte1HPsK0eeBrEOW84.png">
+<meta property="og:image" content="https://zoebian0527.github.io/zoezoebian0527/images/w4WrhHjKRGRFrQFWg-CmFRm1tTz69GFGSSKnZwGdf8A.png">
+<meta property="og:image" content="https://zoebian0527.github.io/zoezoebian0527/images/DU8Mh2AnoN_fgC2-oCi_rGN4CaNyo1vexwOr5gYsH7w.png">
+<meta property="og:image" content="https://zoebian0527.github.io/zoezoebian0527/images/x6nmrYfMNH0IWSh5QcjJ0KSEETY1IQTI46MyMvpoHyo.png">
+<meta property="og:image" content="https://zoebian0527.github.io/zoezoebian0527/images/7OUe7GOt2TxudwjeSnZMT2FwmMjP3yR2-BghXFDOuIc.png">
+<meta property="og:image" content="https://zoebian0527.github.io/zoezoebian0527/images/6Wo-eD0Yw8che0lOOTzfdQ8krh88LRdFwojxPiZWEV8.png">
+<meta property="og:image" content="https://zoebian0527.github.io/zoezoebian0527/images/IDkagVTY5q3m_4dGl1REXvlHuYmL11i-rt5Qi8vah9s.png">
+<meta property="og:image" content="https://zoebian0527.github.io/zoezoebian0527/images/wAEhzpxoeJNQYd99Uy8zjXBjeBHNlv7nCuUE1R6Yg4U.png">
+<meta property="og:image" content="https://zoebian0527.github.io/zoezoebian0527/images/vJXvKop5RhweLa2TmDlKv5KJQQgkeE2seVJ1Fdy1Yko.png">
+<meta property="og:image" content="https://zoebian0527.github.io/zoezoebian0527/images/B7rPh3eTW9KbKyGUfWd3xDt8Oj0fU4dSUj164CaBkFc.png">
+<meta property="og:image" content="https://zoebian0527.github.io/zoezoebian0527/images/PczQwdhldt9kizeeDHQHcEl92bvFKb3oIP6g-IDYWA4.png">
+<meta property="og:image" content="https://zoebian0527.github.io/zoezoebian0527/images/-UXEv9oDBrLTH4ruKrESbSmXVm_Y49BtbO6Ag3TDUc0.png">
+<meta property="og:image" content="https://zoebian0527.github.io/zoezoebian0527/images/erE2Go21A1T0hYbbF5RqxOE7GmhrXVMxFW20hDZ-fMc.png">
+<meta property="og:image" content="https://zoebian0527.github.io/zoezoebian0527/images/vg-x_Veh8yQunegRAsG5R6Hsb0vJU_q5rtf7-wd-5Qw.png">
+<meta property="og:image" content="https://zoebian0527.github.io/zoezoebian0527/images/ngFwzOmC2YV3UlQDr16SQBSLt14Uz7dM0t6ddlgXZHE.png">
+<meta property="og:image" content="https://zoebian0527.github.io/zoezoebian0527/images/oqFYzlByey8rKZpvWe4vog1LG2I-CtHwiq8nupNuyHs.png">
+<meta property="og:image" content="https://zoebian0527.github.io/zoezoebian0527/images/sPNQJdWztF-CEPDGU1CgWqW9T9HgYfeGBr-VIfu2iV8.png">
+<meta property="og:image" content="https://zoebian0527.github.io/zoezoebian0527/images/7J8Li8839b_nAzel5l8JG9kDR4nsdE46ivcmKws3Zo8.png">
+<meta property="article:published_time" content="2022-03-02T07:48:48.703Z">
+<meta property="article:modified_time" content="2022-03-02T07:53:18.938Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://zoebian0527.github.io/zoezoebian0527/images/lbKENK0y73axWmDlVv79k_Klj6Um2IYOMvvbci-G6IY.png"><title>[ Untitled ] | Hexo</title><link ref="canonical" href="https://zoebian0527.github.io/zoezoebian0527/2022/03/02/%E3%80%90GAMES101%E3%80%9102%20%E7%BA%BF%E4%BB%A3%E5%A4%8D%E4%B9%A0/"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css" type="text/css"><link rel="stylesheet" href="/zoezoebian0527/css/index.css?v=2.6.2"><script>var Stun = window.Stun || {};
+var CONFIG = {
+  root: '/zoezoebian0527/',
+  algolia: undefined,
+  assistSearch: undefined,
+  fontIcon: {"prompt":{"success":"fas fa-check-circle","info":"fas fa-arrow-circle-right","warning":"fas fa-exclamation-circle","error":"fas fa-times-circle"},"copyBtn":"fas fa-copy"},
+  sidebar: {"offsetTop":"20px","tocMaxDepth":6},
+  header: {"enable":true,"showOnPost":true,"scrollDownIcon":false},
+  postWidget: {"endText":true},
+  nightMode: {"enable":true},
+  back2top: {"enable":true},
+  codeblock: {"style":"default","highlight":"light","wordWrap":false},
+  reward: false,
+  fancybox: false,
+  zoomImage: {"gapAside":"20px"},
+  galleryWaterfall: undefined,
+  lazyload: false,
+  pjax: undefined,
+  externalLink: {"icon":{"enable":true,"name":"fas fa-external-link-alt"}},
+  shortcuts: undefined,
+  prompt: {"copyButton":"Copy","copySuccess":"Copy Success","copyError":"Copy Error"},
+  sourcePath: {"js":"js","css":"css","images":"images"},
+};
+
+window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 6.0.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">Home</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">Archives</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">Hexo</div><div class="header-banner-info__subtitle"></div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">[ Untitled ]</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">Created</span><span class="post-meta-item__value">2022-03-02</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">Updated</span><span class="post-meta-item__value">2022-03-02</span></span></div></header><div class="post-body">
+        <h1 id="【GAMES101】02-线代复习">
+          <a href="#【GAMES101】02-线代复习" class="heading-link"><i class="fas fa-link"></i></a><a href="#【GAMES101】02-线代复习" class="headerlink" title="【GAMES101】02 线代复习"></a>【GAMES101】02 线代复习</h1>
+      
+        <h1 id="一、向量Vectors">
+          <a href="#一、向量Vectors" class="heading-link"><i class="fas fa-link"></i></a><a href="#一、向量Vectors" class="headerlink" title="一、向量Vectors"></a>一、向量Vectors</h1>
+      
+        <h3 id="1-概念：">
+          <a href="#1-概念：" class="heading-link"><i class="fas fa-link"></i></a><a href="#1-概念：" class="headerlink" title="1.概念："></a>1.概念：</h3>
+      <p><img src="/zoezoebian0527/images/lbKENK0y73axWmDlVv79k_Klj6Um2IYOMvvbci-G6IY.png" alt="image"></p>
+<p><img src="/zoezoebian0527/images/5-SE2JkiYNbb0VtLF7N1Rwcy0yYSeGcPQQzbL2NOn-8.png" alt="image"></p>
+
+        <h3 id="2-向量的加法">
+          <a href="#2-向量的加法" class="heading-link"><i class="fas fa-link"></i></a><a href="#2-向量的加法" class="headerlink" title="2.向量的加法"></a>2.向量的加法</h3>
+      <p><img src="/zoezoebian0527/images/Wne6ru8DE9NU-1scoWW6sOcunOWXDMVMQvATLqLP32Y.png" alt="image"></p>
+
+        <h3 id="3-笛卡尔坐标系中的向量">
+          <a href="#3-笛卡尔坐标系中的向量" class="heading-link"><i class="fas fa-link"></i></a><a href="#3-笛卡尔坐标系中的向量" class="headerlink" title="3.笛卡尔坐标系中的向量"></a>3.笛卡尔坐标系中的向量</h3>
+      <p><img src="/zoezoebian0527/images/2xr5kBH9xovt84bdnfFkNsKM8m9CKDBrXlO3GABRxsc.png" alt="image"></p>
+
+        <h3 id="4-向量的乘法——点乘">
+          <a href="#4-向量的乘法——点乘" class="heading-link"><i class="fas fa-link"></i></a><a href="#4-向量的乘法——点乘" class="headerlink" title="4.向量的乘法——点乘"></a>4.向量的乘法——点乘</h3>
+      <p><img src="/zoezoebian0527/images/f2rcGRd9vdduHt2KnByoShc_iMeqKFL3nCLM58H0ECE.png" alt="image"></p>
+<p><img src="/zoezoebian0527/images/btuy8UXK6WtUwjd9f7iCxvbS7ql4vZdqFp7JF5yfIOY.png" alt="image"></p>
+<p><img src="/zoezoebian0527/images/e0YazVJItMswsGdAadOCXfpuk3H8pL7N0Dv0ELo_YLI.png" alt="image"></p>
+
+        <h4 id="4-1点乘在图形学中的应用（找夹角、投影、判断前后-x2F-接近程度）">
+          <a href="#4-1点乘在图形学中的应用（找夹角、投影、判断前后-x2F-接近程度）" class="heading-link"><i class="fas fa-link"></i></a><a href="#4-1点乘在图形学中的应用（找夹角、投影、判断前后-x2F-接近程度）" class="headerlink" title="4.1点乘在图形学中的应用（找夹角、投影、判断前后&#x2F;接近程度）"></a>4.1点乘在图形学中的应用（找夹角、投影、判断前后&#x2F;接近程度）</h4>
+      <p><img src="/zoezoebian0527/images/DqZ0XfK80SVhzsoYbspo7PhI9oAO-NtHOoP1RqKF0YQ.png" alt="image"></p>
+<p><img src="/zoezoebian0527/images/PaNPiXlVtPAvNc5inHQhQd1eayOqYMHbtaBRztZ_Vq8.png" alt="image"></p>
+<p><img src="/zoezoebian0527/images/37lbQ-HDN6Fv4XiDDIbBCKe94m0BbcFUoGWTVVO6VTs.png" alt="image"></p>
+<p><img src="/zoezoebian0527/images/7baN9EaW1wzKFaLgMGCYndCcpfte1HPsK0eeBrEOW84.png" alt="image"></p>
+<p><img src="/zoezoebian0527/images/w4WrhHjKRGRFrQFWg-CmFRm1tTz69GFGSSKnZwGdf8A.png" alt="image"></p>
+
+        <h3 id="5-叉乘">
+          <a href="#5-叉乘" class="heading-link"><i class="fas fa-link"></i></a><a href="#5-叉乘" class="headerlink" title="5.叉乘"></a>5.叉乘</h3>
+      <p><img src="/zoezoebian0527/images/DU8Mh2AnoN_fgC2-oCi_rGN4CaNyo1vexwOr5gYsH7w.png" alt="image"><br>叉乘得到的方向：右手螺旋定则，四指方向是旋转方向，拇指方向是结果得到的方向。</p>
+<p><img src="/zoezoebian0527/images/x6nmrYfMNH0IWSh5QcjJ0KSEETY1IQTI46MyMvpoHyo.png" alt="image"></p>
+<p>右手坐标系：X与Y的叉乘如果得到z那么就说明是个右手坐标系。</p>
+<p>OpenGL：右手坐标系，DirectX：左手坐标系</p>
+<p>一个向量叉乘它自己为 长度为0 的向量（不管怎么样都是一个向量。</p>
+
+        <h4 id="5-1向量的叉乘可以表示为矩阵的形式：">
+          <a href="#5-1向量的叉乘可以表示为矩阵的形式：" class="heading-link"><i class="fas fa-link"></i></a><a href="#5-1向量的叉乘可以表示为矩阵的形式：" class="headerlink" title="5.1向量的叉乘可以表示为矩阵的形式："></a>5.1向量的叉乘可以表示为矩阵的形式：</h4>
+      <p><img src="/zoezoebian0527/images/7OUe7GOt2TxudwjeSnZMT2FwmMjP3yR2-BghXFDOuIc.png" alt="image"></p>
+
+        <h4 id="5-2叉乘的应用（右手坐标系、判断左右-x2F-内外）">
+          <a href="#5-2叉乘的应用（右手坐标系、判断左右-x2F-内外）" class="heading-link"><i class="fas fa-link"></i></a><a href="#5-2叉乘的应用（右手坐标系、判断左右-x2F-内外）" class="headerlink" title="5.2叉乘的应用（右手坐标系、判断左右&#x2F;内外）"></a>5.2叉乘的应用（右手坐标系、判断左右&#x2F;内外）</h4>
+      <p><img src="/zoezoebian0527/images/6Wo-eD0Yw8che0lOOTzfdQ8krh88LRdFwojxPiZWEV8.png" alt="image"></p>
+<p><img src="/zoezoebian0527/images/IDkagVTY5q3m_4dGl1REXvlHuYmL11i-rt5Qi8vah9s.png" alt="image"></p>
+<p>b在a向量的左侧还是右侧（从a是逆时针旋转还是顺时针旋转得到b），右手螺旋判断：a叉乘b为正：左侧</p>
+<p>判断内和外：P点是否在三角形内部，ABC三个点逆时针排列，先看AB叉乘AC得结果向外，P点在AB左侧。</p>
+
+        <h3 id="6-标准正交基">
+          <a href="#6-标准正交基" class="heading-link"><i class="fas fa-link"></i></a><a href="#6-标准正交基" class="headerlink" title="6.标准正交基"></a>6.标准正交基</h3>
+      <p><img src="/zoezoebian0527/images/wAEhzpxoeJNQYd99Uy8zjXBjeBHNlv7nCuUE1R6Yg4U.png" alt="image"></p>
+<p><img src="/zoezoebian0527/images/vJXvKop5RhweLa2TmDlKv5KJQQgkeE2seVJ1Fdy1Yko.png" alt="image"></p>
+
+        <h1 id="二、矩阵">
+          <a href="#二、矩阵" class="heading-link"><i class="fas fa-link"></i></a><a href="#二、矩阵" class="headerlink" title="二、矩阵"></a>二、矩阵</h1>
+      
+        <h3 id="1-概念">
+          <a href="#1-概念" class="heading-link"><i class="fas fa-link"></i></a><a href="#1-概念" class="headerlink" title="1.概念"></a>1.概念</h3>
+      <p><img src="/zoezoebian0527/images/B7rPh3eTW9KbKyGUfWd3xDt8Oj0fU4dSUj164CaBkFc.png" alt="image"></p>
+<p><img src="/zoezoebian0527/images/PczQwdhldt9kizeeDHQHcEl92bvFKb3oIP6g-IDYWA4.png" alt="image"></p>
+
+        <h3 id="2-矩阵的乘法">
+          <a href="#2-矩阵的乘法" class="heading-link"><i class="fas fa-link"></i></a><a href="#2-矩阵的乘法" class="headerlink" title="2.矩阵的乘法"></a>2.矩阵的乘法</h3>
+      <p><img src="/zoezoebian0527/images/-UXEv9oDBrLTH4ruKrESbSmXVm_Y49BtbO6Ag3TDUc0.png" alt="image"></p>
+<p><img src="/zoezoebian0527/images/erE2Go21A1T0hYbbF5RqxOE7GmhrXVMxFW20hDZ-fMc.png" alt="image"></p>
+<p><img src="/zoezoebian0527/images/vg-x_Veh8yQunegRAsG5R6Hsb0vJU_q5rtf7-wd-5Qw.png" alt="image"></p>
+
+        <h3 id="3-矩阵和向量的乘法">
+          <a href="#3-矩阵和向量的乘法" class="heading-link"><i class="fas fa-link"></i></a><a href="#3-矩阵和向量的乘法" class="headerlink" title="3.矩阵和向量的乘法"></a>3.矩阵和向量的乘法</h3>
+      <p><img src="/zoezoebian0527/images/ngFwzOmC2YV3UlQDr16SQBSLt14Uz7dM0t6ddlgXZHE.png" alt="image"></p>
+
+        <h3 id="4-矩阵的转置">
+          <a href="#4-矩阵的转置" class="heading-link"><i class="fas fa-link"></i></a><a href="#4-矩阵的转置" class="headerlink" title="4.矩阵的转置"></a>4.矩阵的转置</h3>
+      <p><img src="/zoezoebian0527/images/oqFYzlByey8rKZpvWe4vog1LG2I-CtHwiq8nupNuyHs.png" alt="image"></p>
+
+        <h3 id="5-单位矩阵和矩阵的逆">
+          <a href="#5-单位矩阵和矩阵的逆" class="heading-link"><i class="fas fa-link"></i></a><a href="#5-单位矩阵和矩阵的逆" class="headerlink" title="5.单位矩阵和矩阵的逆"></a>5.单位矩阵和矩阵的逆</h3>
+      <p><img src="/zoezoebian0527/images/sPNQJdWztF-CEPDGU1CgWqW9T9HgYfeGBr-VIfu2iV8.png" alt="image"></p>
+
+        <h3 id="6-向量和向量的点积、叉积都能写成矩阵和向量的乘的形式">
+          <a href="#6-向量和向量的点积、叉积都能写成矩阵和向量的乘的形式" class="heading-link"><i class="fas fa-link"></i></a><a href="#6-向量和向量的点积、叉积都能写成矩阵和向量的乘的形式" class="headerlink" title="6.向量和向量的点积、叉积都能写成矩阵和向量的乘的形式"></a>6.向量和向量的点积、叉积都能写成矩阵和向量的乘的形式</h3>
+      <p><img src="/zoezoebian0527/images/7J8Li8839b_nAzel5l8JG9kDR4nsdE46ivcmKws3Zo8.png" alt="image"></p>
+</div><footer class="post-footer"><div class="post-ending ending"><div class="ending__text">------ END ------</div></div><div class="post-copyright copyright"><div class="copyright-author"><span class="copyright-author__name">Author: </span><span class="copyright-author__value"><a href="https://zoebian0527.github.io/zoezoebian0527">John Doe</a></span></div><div class="copyright-link"><span class="copyright-link__name">Link: </span><span class="copyright-link__value"><a href="https://zoebian0527.github.io/zoezoebian0527/2022/03/02/%E3%80%90GAMES101%E3%80%9102%20%E7%BA%BF%E4%BB%A3%E5%A4%8D%E4%B9%A0/">https://zoebian0527.github.io/zoezoebian0527/2022/03/02/%E3%80%90GAMES101%E3%80%9102%20%E7%BA%BF%E4%BB%A3%E5%A4%8D%E4%B9%A0/</a></span></div><div class="copyright-notice"><span class="copyright-notice__name">Copyright: </span><span class="copyright-notice__value">All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" rel="external nofollow" target="_blank">BY-NC-SA</a> unless stating additionally</span></div></div><nav class="post-paginator paginator"><div class="paginator-next"><a class="paginator-next__link" href="/zoezoebian0527/2022/03/02/hello-world/"><span class="paginator-prev__text">Hello World</span><span class="paginator-next__icon"><i class="fas fa-angle-right"></i></span></a></div></nav></footer></div></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><div class="sidebar-nav"><span class="sidebar-nav-toc current">Catalog</span><span class="sidebar-nav-ov">Overview</span></div><section class="sidebar-toc"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E3%80%90GAMES101%E3%80%9102-%E7%BA%BF%E4%BB%A3%E5%A4%8D%E4%B9%A0"><span class="toc-number">1.</span> <span class="toc-text">
+          【GAMES101】02 线代复习</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%90%91%E9%87%8FVectors"><span class="toc-number">2.</span> <span class="toc-text">
+          一、向量Vectors</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%A6%82%E5%BF%B5%EF%BC%9A"><span class="toc-number">2.0.1.</span> <span class="toc-text">
+          1.概念：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%90%91%E9%87%8F%E7%9A%84%E5%8A%A0%E6%B3%95"><span class="toc-number">2.0.2.</span> <span class="toc-text">
+          2.向量的加法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E7%AC%9B%E5%8D%A1%E5%B0%94%E5%9D%90%E6%A0%87%E7%B3%BB%E4%B8%AD%E7%9A%84%E5%90%91%E9%87%8F"><span class="toc-number">2.0.3.</span> <span class="toc-text">
+          3.笛卡尔坐标系中的向量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E5%90%91%E9%87%8F%E7%9A%84%E4%B9%98%E6%B3%95%E2%80%94%E2%80%94%E7%82%B9%E4%B9%98"><span class="toc-number">2.0.4.</span> <span class="toc-text">
+          4.向量的乘法——点乘</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#4-1%E7%82%B9%E4%B9%98%E5%9C%A8%E5%9B%BE%E5%BD%A2%E5%AD%A6%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8%EF%BC%88%E6%89%BE%E5%A4%B9%E8%A7%92%E3%80%81%E6%8A%95%E5%BD%B1%E3%80%81%E5%88%A4%E6%96%AD%E5%89%8D%E5%90%8E-x2F-%E6%8E%A5%E8%BF%91%E7%A8%8B%E5%BA%A6%EF%BC%89"><span class="toc-number">2.0.4.1.</span> <span class="toc-text">
+          4.1点乘在图形学中的应用（找夹角、投影、判断前后&#x2F;接近程度）</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E5%8F%89%E4%B9%98"><span class="toc-number">2.0.5.</span> <span class="toc-text">
+          5.叉乘</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#5-1%E5%90%91%E9%87%8F%E7%9A%84%E5%8F%89%E4%B9%98%E5%8F%AF%E4%BB%A5%E8%A1%A8%E7%A4%BA%E4%B8%BA%E7%9F%A9%E9%98%B5%E7%9A%84%E5%BD%A2%E5%BC%8F%EF%BC%9A"><span class="toc-number">2.0.5.1.</span> <span class="toc-text">
+          5.1向量的叉乘可以表示为矩阵的形式：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-2%E5%8F%89%E4%B9%98%E7%9A%84%E5%BA%94%E7%94%A8%EF%BC%88%E5%8F%B3%E6%89%8B%E5%9D%90%E6%A0%87%E7%B3%BB%E3%80%81%E5%88%A4%E6%96%AD%E5%B7%A6%E5%8F%B3-x2F-%E5%86%85%E5%A4%96%EF%BC%89"><span class="toc-number">2.0.5.2.</span> <span class="toc-text">
+          5.2叉乘的应用（右手坐标系、判断左右&#x2F;内外）</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E6%A0%87%E5%87%86%E6%AD%A3%E4%BA%A4%E5%9F%BA"><span class="toc-number">2.0.6.</span> <span class="toc-text">
+          6.标准正交基</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E7%9F%A9%E9%98%B5"><span class="toc-number">3.</span> <span class="toc-text">
+          二、矩阵</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%A6%82%E5%BF%B5"><span class="toc-number">3.0.1.</span> <span class="toc-text">
+          1.概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E7%9F%A9%E9%98%B5%E7%9A%84%E4%B9%98%E6%B3%95"><span class="toc-number">3.0.2.</span> <span class="toc-text">
+          2.矩阵的乘法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E7%9F%A9%E9%98%B5%E5%92%8C%E5%90%91%E9%87%8F%E7%9A%84%E4%B9%98%E6%B3%95"><span class="toc-number">3.0.3.</span> <span class="toc-text">
+          3.矩阵和向量的乘法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E7%9F%A9%E9%98%B5%E7%9A%84%E8%BD%AC%E7%BD%AE"><span class="toc-number">3.0.4.</span> <span class="toc-text">
+          4.矩阵的转置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E5%8D%95%E4%BD%8D%E7%9F%A9%E9%98%B5%E5%92%8C%E7%9F%A9%E9%98%B5%E7%9A%84%E9%80%86"><span class="toc-number">3.0.5.</span> <span class="toc-text">
+          5.单位矩阵和矩阵的逆</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E5%90%91%E9%87%8F%E5%92%8C%E5%90%91%E9%87%8F%E7%9A%84%E7%82%B9%E7%A7%AF%E3%80%81%E5%8F%89%E7%A7%AF%E9%83%BD%E8%83%BD%E5%86%99%E6%88%90%E7%9F%A9%E9%98%B5%E5%92%8C%E5%90%91%E9%87%8F%E7%9A%84%E4%B9%98%E7%9A%84%E5%BD%A2%E5%BC%8F"><span class="toc-number">3.0.6.</span> <span class="toc-text">
+          6.向量和向量的点积、叉积都能写成矩阵和向量的乘的形式</span></a></li></ol></li></ol></li></ol></section><!-- ov = overview--><section class="sidebar-ov hide"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/images/icons/stun-logo.svg" alt="avatar"></div><p class="sidebar-ov-author__text">hello world</p></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">2</div><div class="sidebar-ov-state-item__name">Archives</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="Creative Commons" data-popover-pos="up"><img src="/zoezoebian0527/images/cc-by-nc-sa.svg"></a></div></section><div class="sidebar-reading"><div class="sidebar-reading-info"><span class="sidebar-reading-info__text">You have read </span><span class="sidebar-reading-info__num">0</span><span class="sidebar-reading-info__perc">%</span></div><div class="sidebar-reading-line"></div></div></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2022</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>John Doe</span></div><div><span>Powered by <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a></span><span> v6.0.0</span><span class="footer__devider">|</span><span>Theme - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v2.6.2</span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="/zoezoebian0527/js/utils.js?v=2.6.2"></script><script src="/zoezoebian0527/js/stun-boot.js?v=2.6.2"></script><script src="/zoezoebian0527/js/scroll.js?v=2.6.2"></script><script src="/zoezoebian0527/js/header.js?v=2.6.2"></script><script src="/zoezoebian0527/js/sidebar.js?v=2.6.2"></script></body></html>
